@@ -1,0 +1,98 @@
+.about
+    padding-top: 100px
+    @media screen and ( max-width: 991px )
+        padding-top: 50px
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        width: 55%
+        @media screen and ( max-width: 991px )
+            width: 100%
+        @media screen and ( max-width: 575px )
+            flex-direction: column
+            align-items: center
+    &-block
+        width: 50%
+        margin-bottom: 40px
+        @media screen and ( max-width: 991px )
+            text-align: center
+            width: calc( 50% - 20px )
+            margin-right: 20px
+            &:nth-of-type(even)
+                margin-right: 0
+        @media screen and ( max-width: 575px )
+            width: 100%
+        &_top
+            display: flex
+            align-items: flex-end
+            margin-bottom: 20px
+            height: 37px
+            @media screen and ( max-width: 991px )
+                justify-content: center
+        &__title
+            font-weight: 300
+            font-size: 16px
+            line-height: 135%
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #000
+            margin-left: 20px
+        &__text
+            font-weight: 300
+            font-size: 14px
+            line-height: 135%
+            color: #616161
+            max-width: 255px
+            @media screen and ( max-width: 991px )
+                max-width: none
+    &-info
+        padding-top: 100px
+        background-color: #F9F7F7
+        @media screen and ( max-width: 991px )
+            padding-top: 50px
+        &__body
+            display: flex
+            justify-content: space-between
+            align-items: start
+            @media screen and ( max-width: 991px )
+                flex-direction: column
+                align-items: center
+        &__greeting
+            width: 35%
+            text-align: center
+            @media screen and ( max-width: 991px )
+                width: 100%
+            & img
+                display: block
+                margin: 0 auto
+                margin-bottom: 30px
+        &__text
+            font-weight: 300
+            font-size: 14px
+            line-height: 135%
+            color: #616161
+            max-width: 350px
+            @media screen and ( max-width: 991px )
+                max-width: none
+                margin-bottom: 20px
+.video
+    &-block
+        position: relative
+        &__img
+            width: 100%
+            display: block
+            margin: 0 auto
+        &__play
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            & svg
+                transition: 0.3s
+                & path
+                    transition: 0.3s
+        &:hover &__play
+            & svg
+                transform: scale(1.05)
+                & path
+                    fill: #fff

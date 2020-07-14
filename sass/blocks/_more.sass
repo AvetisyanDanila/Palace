@@ -1,0 +1,52 @@
+.more
+    background-image: url(../img/more/bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    padding: 100px 0
+    @media screen and ( max-width: 991px )
+        padding: 50px 0
+    display: flex
+    align-items: center
+    & a 
+        text-decoration: none
+        outline: none
+        display: block
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        color: #fff!important
+        margin-bottom: 70px!important
+        @media screen and ( max-width: 767px )
+            text-align: center
+    &-buttons
+        display: flex
+        @media screen and ( max-width: 575px )
+            flex-direction: column
+    &__button
+        background-color: #fff
+        padding: 20px 60px
+        color: #000
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        font-weight: 300
+        margin-right: 90px
+        transition: 0.3s
+        @media screen and ( max-width: 991px )
+            padding: 20px 50px
+        @media screen and ( max-width: 767px )
+            padding: 20px 40px
+            text-align: center
+        @media screen and ( max-width: 575px )
+            margin-right: 0
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
+        &:hover
+            color: $accent
+        &:last-child
+            margin-right: 0

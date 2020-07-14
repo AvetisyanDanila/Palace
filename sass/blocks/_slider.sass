@@ -1,0 +1,98 @@
+.slider
+    padding-top: 60px
+    @media screen and ( max-width: 991px )
+        padding-top: 30px
+    &-block
+        position: relative
+        max-width: 400px
+        max-height: 440px
+        overflow: hidden
+        margin: 0 auto
+        &:hover &__info
+            bottom: 0
+        & img
+            width: 100%
+            display: block
+            margin: 0 auto
+        &__info
+            position: absolute
+            width: 100%
+            height: 100%
+            bottom: -60%
+            background-color: rgba(209, 169, 84, 0.9)
+            padding: 20px 15px
+            transition: 0.3s
+            @media screen and ( max-width: 991px )
+                bottom: -67%
+            @media screen and ( max-width: 380px )
+                bottom: -60%
+            &_top
+                width: 100%
+                height: 135px
+                padding: 20px 0
+                border: 1px solid rgba(255, 255, 255, 0.5)
+                @media screen and ( max-width: 1199px )
+                    padding: 10px 0
+                    height: 100px
+        &__name
+            font-weight: 400
+            font-size: 30px
+            line-height: 37px
+            text-align: center
+            text-transform: uppercase
+            color: #fff
+            margin-bottom: 20px
+            @media screen and ( max-width: 1199px )
+                font-size: 24px
+                line-height: 28px
+                margin-bottom: 10px
+            @media screen and ( max-width: 575px )
+                font-size: 20px
+                line-height: 24px
+        &__label
+            font-weight: 400
+            font-size: 14px
+            line-height: 135%
+            text-align: center
+            color: #fff
+            max-width: 220px
+            margin: 0 auto
+        &__text
+            font-weight: 400
+            font-size: 18px
+            line-height: 120%
+            text-align: center
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translateX(-50%)
+            color: #fff
+            @media screen and ( max-width: 1199px )
+                font-size: 14px
+.swiper
+    &-container
+        padding-bottom: 50px
+    &-pagination-bullet
+        background-color: #E5E5E5
+        border-radius: 0
+        width: 20px
+        height: 2px
+        margin: 0!important
+        opacity: 1
+        &-active
+            background-color: #000
+    &-arrows
+    &-arrow
+        position: absolute
+        z-index: 10
+        bottom: 5px
+        left: 50%
+        transform: translateX(-50%)
+        background-color: transparent
+        border: none
+        &:focus
+            outline: none
+        &-prev
+            left: calc(50% - 85px)
+        &-next
+            left: calc(50% + 85px)
